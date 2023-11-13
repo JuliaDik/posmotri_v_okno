@@ -12,11 +12,15 @@
   </head>
   <body class="page">
     <main class="content">
+      <!-- СЕКЦИЯ 1: РЕЗУЛЬТАТ ПОИСКА: начало -->
       <section class="result">
+        <!-- ОКНО ПРОСМОТРА -->
         <div class="result__video-container">
           <video src="" controls class="result__video" poster=""></video>
         </div>
+        <!-- ФОРМА ПОИСКА: начало -->
         <form class="search-form">
+          <!-- Город: поиск -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Город</h2>
             <label class="search-form__label">
@@ -29,9 +33,11 @@
               />
             </label>
           </fieldset>
+          <!-- Время суток -->
           <fieldset class="search-form__fieldset">
             <h2 class="search-form__fieldset-title">Время суток</h2>
             <div class="search-form__checkbox-list">
+              <!-- Утро -->
               <label class="search-form__label">
                 <input
                   type="checkbox"
@@ -42,6 +48,7 @@
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">Утро</span>
               </label>
+              <!-- День -->
               <label class="search-form__label">
                 <input
                   type="checkbox"
@@ -52,6 +59,7 @@
                 <span class="search-form__pseudo-checkbox"></span>
                 <span class="search-form__label-text">День</span>
               </label>
+              <!-- Ночь -->
               <label class="search-form__label">
                 <input
                   type="checkbox"
@@ -64,19 +72,27 @@
               </label>
             </div>
           </fieldset>
+          <!-- Кнопка поиска -->
           <button type="submit" class="button search-form__submit-button">
             Найти
           </button>
         </form>
+        <!-- ФОРМА ПОИСКА: конец -->
       </section>
+      <!-- СЕКЦИЯ 1: РЕЗУЛЬТАТ ПОИСКА: конец -->
+
+      <!-- СЕКЦИЯ 2: СПИСОК ГОРОДОВ: начало -->
       <section class="content__details">
+        <!-- НАЗВАНИЕ -->
         <h1 class="title">
           <span class="content__accent">По-</span><br />смотри<br />в окно
         </h1>
+        <!-- СПИСОК КАРТОЧЕК -->
         <ul class="content__list">
-          <!-- ЗДЕСЬ ОКАЖУТСЯ ТЕМПЛЕЙТЫ КАРТОЧЕК -->
+          <!-- Темплейты карточек -->
         </ul>
       </section>
+      <!-- СЕКЦИЯ 2: СПИСОК ГОРОДОВ: конец -->
     </main>
 
     <!-- ТЕМПЛЕЙТЫ -->

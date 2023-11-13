@@ -16,7 +16,7 @@ html {
   block-size: 100%;
   margin: auto;
   color: #fff;
-  font-family: 'Fira Sans Condensed', sans-serif;
+  font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   background-color: #1b1919;
 }
@@ -50,7 +50,7 @@ ol {
 .result {
   display: flex;
   flex-direction: column;
-  gap: 16px
+  gap: 16px;
 }
 
 .result__video-container {
@@ -72,11 +72,29 @@ ol {
   align-items: start;
 }
 
+.search-form__fieldset-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .content__details {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   gap: 28px;
+}
+
+.title {
+  font-family: Oswald;
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.content__accent {
+  color: #545050;
 }
 
 .content__list {
@@ -89,6 +107,11 @@ ol {
   margin-block-end: 34px;
 }
 
+.content__card-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .content__video-card {
   display: flex;
   align-items: start;
@@ -96,6 +119,20 @@ ol {
 
 .content__video-card-description-container {
   flex-grow: 1;
+}
+
+.content__video-card-title {
+  margin-block-end: 6px;
+  font-family: Oswald;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.content__video-card-description {
+  font-weight: 400;
+  line-height: 0.9;
 }
 
 .content__video-card-thumbnail {

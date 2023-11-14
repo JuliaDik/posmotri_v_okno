@@ -25,4 +25,4 @@
 <h2>Ссылка на макет</h2>
 <a href="https://www.figma.com/file/QHcvX1RsUI89CulRB7HLk6/%234-Посмотри-в-окно?node-id=0%3A1&t=tJOMMSaw5EIu481X-1">Открыть</a>
 <h2>Ссылка на проект</h2>
-<a href="">Открыть</a>
+<a href="https://juliadik.github.io/posmotri_v_okno/index.html">Открыть</a>

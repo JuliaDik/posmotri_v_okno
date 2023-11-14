@@ -50,6 +50,35 @@ ol {
   white-space: nowrap;
 }
 
+.button {
+  padding: 0;
+  align-self: end;
+  color: #fff;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.2;
+  background-color: transparent;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+}
+
 .content {
   display: flex;
   align-items: end;
@@ -103,6 +132,15 @@ ol {
   display: flex;
   align-items: center;
   width: fit-content;
+  cursor: pointer;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline: 1px solid #fff;
+}
+
+.search-form__label:has(.search-form__checkbox):hover {
+  text-decoration: underline;
 }
 
 .search-form__textfield {
@@ -123,16 +161,31 @@ ol {
   color: rgb(255 255 255 / 0.7);
 }
 
+.search-form__textfield:focus {
+  outline: none;
+}
+
 .search-form__checkbox-list {
   display: flex;
   gap: 15px;
 }
 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
 .search-form__pseudo-checkbox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 19px;
   height: 19px;
   border: 1px solid #fff;
-  cursor: pointer;
 }
 
 .search-form__label-text {
@@ -140,24 +193,11 @@ ol {
   line-height: 1.2;
 }
 
-.button {
-  padding: 0;
-  align-self: end;
-  color: #fff;
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: 700;
-  line-height: 1.2;
-  background-color: transparent;
-  border: 1px solid #fff;
-  cursor: pointer;
-}
-
 .search-form__submit-button {
   padding: 6px 73.5px;
 }
 
-/* СЕКЦИЯ 2: СПИСОК ГОРОДОВ */
+/* СЕКЦИЯ 2: СПИСОК ГОРОДОВ ИЛИ НАЙДЕННЫЙ ГОРОД В РАЗНОЕ ВРЕМЯ СУТОК */
 
 .content__details {
   display: flex;

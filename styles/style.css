@@ -171,15 +171,13 @@ ol {
 }
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
-  position: absolute;
-  content: '';
+  content: "";
   width: 15px;
   height: 15px;
   background-color: #fff;
 }
 
 .search-form__pseudo-checkbox {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
